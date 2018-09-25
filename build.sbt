@@ -1,7 +1,5 @@
 import sbtcrossproject.CrossPlugin.autoImport.{crossProject, CrossType}
 
-name := "scala-sbt-spring-boot-with-scalajs"
-
 val sharedSettings = Seq(scalaVersion := "2.12.6")
 
 lazy val app =
