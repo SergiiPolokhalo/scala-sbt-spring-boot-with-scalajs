@@ -1,11 +1,28 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-  <title>TODO</title>
+  <title>Scala JVM / Scala.js cross project</title>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/milligram/milligram/master/dist/milligram.min.css">
+  <style type="text/css" media="screen">
+  p {
+    margin: 20px 0 0 0
+  }
+  </style>
 </head>
 <body>
-  <p th:text="${greeting}"/>
+  <div class="container">
+    <h1>Scala JVM / Scala.js cross project</h1>
+    <small>
+      Click
+      <a href="https://exercism.io/tracks/scala/exercises/sieve/solutions/41f2f93a967547d1b0533bc7caa106a2">here</a>
+      to see the "Sieve" algorithm to finding primes
+    </small>
+    <p th:text="${hello}"></p>
+    <code th:text="${primes}"></code>
+  </div>
   <script type="text/javascript" th:src="@{/js/app-fastopt.js}"></script>
 </body>
 </html>
