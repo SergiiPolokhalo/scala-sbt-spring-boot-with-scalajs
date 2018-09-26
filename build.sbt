@@ -19,3 +19,6 @@ lazy val app =
         "org.springframework.boot" % "spring-boot-starter-thymeleaf" % "2.0.5.RELEASE"
       )
     )
+    .jvmConfigure(
+      _.enablePlugins(JavaAppPackaging)
+    )
