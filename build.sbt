@@ -4,6 +4,7 @@ val sharedSettings = Seq(scalaVersion := "2.12.6")
 
 lazy val app =
   crossProject(JSPlatform, JVMPlatform)
+    .withoutSuffixFor(JVMPlatform)
     .crossType(CrossType.Full)
     .settings(sharedSettings)
     .jsSettings(
